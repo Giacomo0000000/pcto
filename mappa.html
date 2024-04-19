@@ -1,0 +1,70 @@
+
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Google Maps - Percorso Circolare</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB75GP0-I6kSaH78mN9bFsvO1DDEbRhIvo"></script>
+    
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 16,
+            center: new google.maps.LatLng(41.9326504, 12.5165017)
+        });
+
+        new google.maps.Polyline({
+            clickable: false,
+            geodesic: true,
+            strokeColor: "#0000FF",
+            strokeOpacity: 1.000000,
+            strokeWeight: 5,
+            map: map,
+            path: [
+                new google.maps.LatLng(41.9426504, 12.5165017),
+                new google.maps.LatLng(41.94249847753012, 12.518238181776669),
+                new google.maps.LatLng(41.942047326207856, 12.519921901433255),
+                new google.maps.LatLng(41.94131065403784, 12.5215017),
+                new google.maps.LatLng(41.94031084443119, 12.522929576096864),
+                new google.maps.LatLng(41.939078276096865, 12.52416214443119),
+                new google.maps.LatLng(41.9376504, 12.525161954037843),
+                new google.maps.LatLng(41.93607060143326, 12.525898626207859),
+                new google.maps.LatLng(41.93438688177667, 12.526349777530122),
+                new google.maps.LatLng(41.9326504, 12.526501699999999),
+                new google.maps.LatLng(41.93091391822333, 12.526349777530122),
+                new google.maps.LatLng(41.92923019856674, 12.525898626207859),
+                new google.maps.LatLng(41.9276504, 12.525161954037843),
+                new google.maps.LatLng(41.926222523903135, 12.52416214443119),
+                new google.maps.LatLng(41.92498995556881, 12.522929576096864),
+                new google.maps.LatLng(41.92399014596216, 12.5215017),
+                new google.maps.LatLng(41.923253473792144, 12.519921901433255),
+                new google.maps.LatLng(41.92280232246988, 12.518238181776669),
+                new google.maps.LatLng(41.9226504, 12.5165017),
+                new google.maps.LatLng(41.92280232246988, 12.51476521822333),
+                new google.maps.LatLng(41.923253473792144, 12.513081498566743),
+                new google.maps.LatLng(41.92399014596216, 12.511501699999998),
+                new google.maps.LatLng(41.92498995556881, 12.510073823903134),
+                new google.maps.LatLng(41.926222523903135, 12.508841255568809),
+                new google.maps.LatLng(41.9276504, 12.507841445962155),
+                new google.maps.LatLng(41.92923019856674, 12.50710477379214),
+                new google.maps.LatLng(41.93091391822333, 12.506653622469877),
+                new google.maps.LatLng(41.9326504, 12.5065017),
+                new google.maps.LatLng(41.93438688177667, 12.506653622469877),
+                new google.maps.LatLng(41.93607060143326, 12.50710477379214),
+                new google.maps.LatLng(41.9376504, 12.507841445962155),
+                new google.maps.LatLng(41.939078276096865, 12.508841255568809),
+                new google.maps.LatLng(41.94031084443119, 12.510073823903134),
+                new google.maps.LatLng(41.94131065403784, 12.511501699999998),
+                new google.maps.LatLng(41.942047326207856, 12.513081498566743),
+                new google.maps.LatLng(41.94249847753012, 12.51476521822333),
+
+            ]
+        });
+    }
+</script>
+
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
